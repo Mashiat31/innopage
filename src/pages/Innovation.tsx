@@ -18,7 +18,6 @@ const Innovation = () => {
   };
 
   const filteredWhatsNew = filterFeatures(featuresData.whatsNew, searchQuery);
-  const filteredUpcoming = filterFeatures(featuresData.upcomingFeatures, searchQuery);
 
   return (
     <div className="min-h-screen bg-background flex">
@@ -78,31 +77,6 @@ const Innovation = () => {
               )}
             </section>
 
-            {/* Upcoming Features Section */}
-            <section>
-              <div className="mb-6">
-                <h2 className="text-xl font-semibold text-foreground mb-2">Upcoming Features</h2>
-                <p className="text-muted-foreground">
-                  Roadmap items and features in development
-                </p>
-              </div>
-              
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                {filteredUpcoming.map((feature) => (
-                  <FeatureCard
-                    key={feature.id}
-                    feature={feature}
-                    type="upcoming"
-                  />
-                ))}
-              </div>
-              
-              {filteredUpcoming.length === 0 && (
-                <div className="text-center py-12 text-muted-foreground">
-                  No upcoming features found matching your search.
-                </div>
-              )}
-            </section>
 
           </div>
         </main>
