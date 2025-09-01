@@ -61,7 +61,13 @@ export default {
 					'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
-				}
+				},
+				'innovation-section': 'hsl(var(--innovation-section))',
+				'innovation-section-border': 'hsl(var(--innovation-section-border))',
+				'feature-card': 'hsl(var(--feature-card))',
+				'feature-card-hover': 'hsl(var(--feature-card-hover))',
+				'release-badge': 'hsl(var(--release-badge))',
+				'upcoming-badge': 'hsl(var(--upcoming-badge))'
 			},
 			borderRadius: {
 				lg: 'var(--radius)',

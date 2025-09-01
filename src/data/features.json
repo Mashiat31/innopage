@@ -1,0 +1,51 @@
+{
+  "whatsNew": [
+    {
+      "id": "1",
+      "title": "Custom Index",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat.",
+      "releaseDate": "19 May 2025",
+      "mediaType": "video",
+      "mediaUrl": "/placeholder-video.mp4",
+      "featured": true
+    },
+    {
+      "id": "2",
+      "title": "Enhanced Risk Analytics",
+      "description": "Advanced analytics dashboard with improved visualization and real-time risk assessment capabilities for better decision making.",
+      "releaseDate": "15 May 2025",
+      "mediaType": "image",
+      "mediaUrl": "src/assets/risk-analytics-feature.jpg",
+      "featured": false
+    },
+    {
+      "id": "3",
+      "title": "Global Market Integration",
+      "description": "Seamlessly integrate with global market data feeds for comprehensive risk landscape analysis and reporting.",
+      "releaseDate": "10 May 2025",
+      "mediaType": "image",
+      "mediaUrl": "src/assets/global-market-feature.jpg",
+      "featured": false
+    }
+  ],
+  "upcomingFeatures": [
+    {
+      "id": "4",
+      "title": "AI-Powered Recommendations",
+      "description": "Machine learning algorithms will provide intelligent recommendations for risk mitigation strategies based on historical data and market trends.",
+      "expectedDate": "Q3 2025",
+      "status": "In Development",
+      "webinarLink": "#",
+      "betaSignup": true
+    },
+    {
+      "id": "5",
+      "title": "Mobile Application",
+      "description": "Access your risk dashboard and key metrics on the go with our upcoming native mobile application for iOS and Android.",
+      "expectedDate": "Q4 2025",
+      "status": "Planning",
+      "webinarLink": "#",
+      "betaSignup": false
+    }
+  ]
+}
