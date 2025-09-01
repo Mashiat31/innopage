@@ -2,6 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Play, ExternalLink, Calendar } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 import riskAnalyticsImg from "@/assets/risk-analytics-feature.jpg";
 import globalMarketImg from "@/assets/global-market-feature.jpg";
 
@@ -25,14 +26,28 @@ interface FeatureCardProps {
 }
 
 const FeatureCard = ({ feature, type }: FeatureCardProps) => {
+  const navigate = useNavigate();
+  
   // Map media URLs to imported images
   const getImageSrc = (mediaUrl: string) => {
     if (mediaUrl.includes("risk-analytics-feature.jpg")) return riskAnalyticsImg;
     if (mediaUrl.includes("global-market-feature.jpg")) return globalMarketImg;
     return null;
   };
+
+  const handleCardClick = () => {
+    if (type === "released") {
+      navigate(`/article/${feature.id}`);
+    }
+  };
+
   return (
-    <Card className="bg-feature-card hover:bg-feature-card-hover transition-colors duration-200 border border-innovation-section-border">
+    <Card 
+      className={`bg-feature-card hover:bg-feature-card-hover transition-colors duration-200 border border-innovation-section-border ${
+        type === "released" ? "cursor-pointer hover:shadow-md" : ""
+      }`}
+      onClick={handleCardClick}
+    >
       <CardHeader className="pb-4">
         <div className="flex items-start justify-between gap-4">
           <div className="flex-1">
